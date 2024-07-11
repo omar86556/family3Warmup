@@ -3,29 +3,43 @@
 
 // function declaration
 function MyPartnerName(firstname, lastname) {
-	// return firstname+" "+lastname  
+	return (firstname+" "+lastname )
+}
+
+// 2
+let MultipleOf13orNot = function(n) {
+	if(n % 13 === true){
+		return(n ," is a multiple of thirteen")
+	}
+	else{
+		return(n , " isn't a multiple of thirteen")
+	}
 }
 
 
-let MultipleOf13orNot = function() {
-
-}
 
 
 
-
-
-// 4-create a function that takes a age as a parametre and return that age in seconds.*//
+// 3-create a function that takes a age as a parametre and return that age in seconds.*//
 
 const  AgeInSeconds = (age) =>  {
-
+	let days = age / 365
+	let hours = days / 24
+	let minuts = hours / 60
+	return (minuts / 60 ," is your age in seconds")
 }
- * 5 - Write a function sameLength that accepts two strings as arguments, and returns true if those strings have the same length, and false otherwise.
- */
+//  * 4 - Write a function sameLength that accepts two strings as arguments, and returns true if those strings have the same length, and false otherwise.
+//  */
 const sameLength=(string1, string2)=> {
+	if (string1 === string2) {
+		return true
+	}
+	else {
+		return false
+	}
 }
 /**
- *? 6 - Write a function called (reverseStr) that takes a string as an input and returns the reverse of each letter
+ *? 5 - Write a function called (reverseStr) that takes a string as an input and returns the reverse of each letter
  *? followed by a number starting from zero(solve it using while loop).
  *? example:    reverseStr('hello'); "o0l1l2e3h4"
  *
@@ -34,9 +48,14 @@ const sameLength=(string1, string2)=> {
  */
 
 let reverseStr = function (str){
+	let string =  ""
+	let i = 0
+	while (i <= str.length){
+		string.concat()
+	}
 }
 /**
-// * 7 Write a function called laugh() that takes one parameter,
+// * 6 Write a function called laugh() that takes one parameter,
 // * num that represents the number of "ha"s to return.
 // * laugh(6); => "hahahahahaha"
  *
@@ -45,23 +64,28 @@ let reverseStr = function (str){
  * @return {string}
  */
 const laugh= function (num){
-
+	let laugh = ""
+	let i = 0
+	while (i <= num) {
+		laugh.concat("ha")
+		i++
+	}
 }
 
 
 /**
- * 8- write a function to Reverse an array without use array.reverse() method:
+ * 7- write a function to Reverse an array without use array.reverse() method:
  * ex: reverseArray([1,2,3]) ==> [3,2,1]
  * @function reverseArray
  * @param {array} array
  * @return {Array}
  */
 
-let reverseArray = (array ) => 
+let reverseArray = (array ) => {}
 
 
 /**
- * 10-Given an array of integers and an integer n.
+ * 8-Given an array of integers and an integer n.
  * find all occurrences of n in the given array and return another array containing all the index positions of n in the given array.
  * If n is not in the given array, return an empty array [].
  * Assume that n and all values in the given array will always be integers.
@@ -75,7 +99,7 @@ let reverseArray = (array ) =>
 let findAll = (arr,n) => {}
 
 
-// 6. write a function that takes a string as an argument
+// 9. write a function that takes a string as an argument
 // and returns the string reversed word by word
 // Example : reverseWord("hi there how is the weather today") ==>> "today weather the is how there hi"
 //
