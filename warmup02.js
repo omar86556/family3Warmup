@@ -1,11 +1,17 @@
-/**
- * 2 - Write a function called counter that, when invoked, always returns a number that is one more than the previous invocation. For instance:
- * counting(5); // => '1, 2, 3, 4, 5'
- * counting(1); // => '1'
- * counting(3); // => '1, 2, 3'
- */
+// /**
+//  * 2 - Write a function called counter that, when invoked, always returns a number that is one more than the previous invocation. For instance:
+//  * counting(5); // => '1, 2, 3, 4, 5'
+//  * counting(1); // => '1'
+//  * counting(3); // => '1, 2, 3'
+//  **/
 
-let countring = (number) => 
+let  counting =   (number) => {
+    let i = 0
+    while(i < number) {
+        i++
+        console.log(i)
+    }
+}
 
 
 /**
@@ -14,10 +20,7 @@ let countring = (number) =>
  * @return {any}
  */
 
- flet midElement =function (array) {
-   
-
-}
+ let midElement = (array) => array.at(Math.round(array.length / 2)-1)
 
 /**
  * 4 - write a function called (sameLength) that takes array of strings and returns an array of the strings that have the same length
@@ -29,7 +32,7 @@ let countring = (number) =>
 
   
 let sameLength =function (array) {
-  
+
 }
 
 /**
@@ -66,7 +69,7 @@ let reverseWord=(string) => {
 //takes a number as a parameter and returns the sum of the first and last digits. Please do this without turning the number into a string.
 
 function sumOfFirstAndLast(number) {
- 
+
 } 
 
 /**
@@ -90,4 +93,4 @@ let objKey=(object)=>{
  * @param {Object} obj
  * @return number
  */
-let objLength=(obj) =>
+let objLength=(obj) =>{}
