@@ -9,8 +9,15 @@
 
 
 function objSort(array){
-
-    
+    let i = 0
+    let result = []
+    while(i <= array.length) {
+        if(array.at(i) === i){
+            result.push(array.at(i))
+        }
+        i++
+    }
+    return(result)
 }
 
 /**

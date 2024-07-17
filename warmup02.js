@@ -5,12 +5,41 @@
 //  * counting(3); // => '1, 2, 3'
 //  **/
 
-let  counting =   (number) => {
-    let i = 0
-    while(i < number) {
+let counting = (number) => {
+
+    // let i = 0
+    // const start = Date.now();
+
+    // console.log('starting timer...');
+
+    while (i < number) {
         i++
         console.log(i)
     }
+    // setTimeout(() => {
+    //     const millis = Date.now() - start;
+    
+    //     console.log(`milliseconds elapsed = ${millis}`)}, 0);
+}
+let counting_recursion = (number) => {
+    let i = 0
+    // const start = Date.now();
+    // console.log('starting timer...');
+    count()
+    function count() {
+        if (i < number) {
+            i++
+            console.log(i)
+            count()
+
+        }
+
+    }
+    // setTimeout(() => {
+    //     const millis = Date.now() - start;
+      
+    //     console.log(`milliseconds elapsed = ${millis}`)}, 0);    commented lines are for time efficency analysis 
+      
 }
 
 
@@ -20,7 +49,7 @@ let  counting =   (number) => {
  * @return {any}
  */
 
- let midElement = (array) => array.at(Math.round(array.length / 2)-1)
+let midElement = (array) => array.at(Math.round(array.length / 2) - 1)
 
 /**
  * 4 - write a function called (sameLength) that takes array of strings and returns an array of the strings that have the same length
@@ -30,8 +59,8 @@ let  counting =   (number) => {
  * @return {Array<string>}
  */
 
-  
-let sameLength =function (array) {
+
+let sameLength = function (array) {
 
 }
 
@@ -49,8 +78,8 @@ let sameLength =function (array) {
  */
 
 
- let findAll = function (array, n) {
-   
+let findAll = function (array, n) {
+
 };
 
 // 6. write a function that takes a string as an argument
@@ -60,7 +89,7 @@ let sameLength =function (array) {
 //
 // Note : you can`t use any built-in functions .
 
-let reverseWord=(string) => {
+let reverseWord = (string) => {
 
 }
 
@@ -70,7 +99,7 @@ let reverseWord=(string) => {
 
 function sumOfFirstAndLast(number) {
 
-} 
+}
 
 /**
  * 8 - Write a function named objKey that take an object as a parameter and returns an array containing the keys of the object
@@ -81,8 +110,8 @@ function sumOfFirstAndLast(number) {
  * @return {Array}
  */
 
-let objKey=(object)=>{
-   
+let objKey = (object) => {
+
 }
 
 /**
@@ -93,4 +122,4 @@ let objKey=(object)=>{
  * @param {Object} obj
  * @return number
  */
-let objLength=(obj) =>{}
+let objLength = (obj) => { }
