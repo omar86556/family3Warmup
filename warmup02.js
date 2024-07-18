@@ -7,7 +7,7 @@
 
 let counting = (number) => {
 
-    // let i = 0
+    let i = 0
     // const start = Date.now();
 
     // console.log('starting timer...');

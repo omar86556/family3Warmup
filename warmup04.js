@@ -8,7 +8,12 @@
 
 function iterateAndLog(n) {
 
-  // TODO: your work goes here
+  if((n % 2) === 0){
+    return(n+" is even")
+  }
+  else{
+    return(n+" is odd")
+  }
 
 }
 
@@ -25,12 +30,12 @@ function iterateAndLog(n) {
 
 function fib(number) {
 
-  // TODO: your work goes here
+
 
 }
 //3.Write a function called sumOfFirstAndLast that 
 //takes a number as a parameter and returns the sum of the first and last digits. Please do this without turning the number into a string.
 
 function sumOfFirstAndLast(number) {
- 
+  
 } 

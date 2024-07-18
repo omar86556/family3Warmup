@@ -8,16 +8,45 @@
  */
 
 
-function objSort(array){
+function objSort(array) {
     let i = 0
-    let result = []
-    while(i <= array.length) {
-        if(array.at(i) === i){
-            result.push(array.at(i))
+    let r = 0
+    let result0 = []
+    let result1 = []
+    let result2 = []
+
+    //seperator
+
+    // const start = Date.now();
+    // console.log('starting timer...');
+
+    //seperator
+
+    while (i < array.length) {
+        if (array[i].id === r) {
+            result1.push(array.at(i))
+            r++
+        }
+        else {
+            result2.push(array.at(i))
         }
         i++
     }
-    return(result)
+    result0.push(...result1, ...result2)
+
+    //seperator
+
+    // setTimeout(() => {
+    //     const millis = Date.now() - start;
+
+    //     console.log(`milliseconds elapsed = ${millis}`)
+    // });
+
+    //seperator
+
+
+    console.log("ordered:")
+    return (result0)
 }
 
 /**
