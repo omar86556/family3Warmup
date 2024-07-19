@@ -34,7 +34,7 @@ function objSort(array) {
     }
     result0.push(...result1, ...result2)
 
-    //seperator
+    // seperator
 
     // setTimeout(() => {
     //     const millis = Date.now() - start;
@@ -42,7 +42,7 @@ function objSort(array) {
     //     console.log(`milliseconds elapsed = ${millis}`)
     // });
 
-    //seperator
+    // seperator
 
 
     console.log("ordered:")

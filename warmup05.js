@@ -7,8 +7,27 @@ myCount.down() => 1
 myCount.counter => 1 
 **/ 
 
-let Counter = () => {
-  
+let Counter = (start, end) => {
+    let numbers = {}
+    let number = start
+    count()
+    function count (){
+        if(start !== end){
+            if (((start-end) < 0) === true){
+                start++
+                Object.numbers(number)
+                count()
+            }
+            else{
+                start--
+                Object.numbers(number)
+                count()
+            }
+        }
+        else{
+            return numbers
+        }
+    }
 }
 
 
@@ -88,7 +107,7 @@ let FindingTheLongestWord = (str) => {}
  * Output: []
  * explanation: There are no pairs that add up to the target sum of 10.
  */
-let  SumofArrayPairs => (array) => {}
+let  SumofArrayPairs = (array) => {}
 
 /**
  * 6-Title: Palindrome Checker
@@ -123,7 +142,7 @@ let  SumofArrayPairs => (array) => {}
  * explanation: Ignoring spaces, punctuation, and capitalization, the string reads the same backward as forward.
 
  */
-let  PalindromeChecker => (str) => {}
+let  PalindromeChecker = (str) => {}
 /**
  * 7-Title: Climbing the Fibonacci Stairs
  * 
